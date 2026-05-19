@@ -1,10 +1,17 @@
 function Hero() {
     return (
-        <header>
+        <div>
             <img src=""></img>
-            <h1>United States Diaspora United Chamber of Commerce</h1>
-            <h3>Changing the local economy one business at a time</h3>
-        </header>
+            <h1>Changing local business with
+                innovation and empowerment</h1>
+            <p>The US Diaspora United Chamber
+                of Commerce is a nonprofit
+                organization dedicated to supporting
+                and advocating for diaspora and immigrant
+                entrepreneurs and business owners who lack
+                established institutional representation
+                in the United States. </p>
+        </div>
     )
 }
 

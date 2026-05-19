@@ -5,7 +5,8 @@ function Contact_Form() {
             <input type = "text">Name</input>
             <input type = "email">Email Address</input>
             <input type = "tel">Phone Number</input>
-            <input type = "text">Reason for Interest</input>
+            <input type = "text">Message</input>
+            <button>Submit</button>
         </div>
     )
 }
