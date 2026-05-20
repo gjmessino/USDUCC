@@ -14,6 +14,7 @@ function App() {
       <meta property="og:description" content="Little Lemon is a local Mediterranean restaurant focused on traditional recipe" />
       <meta property="og:image" content="./public/restaurant-chefB.jpg" />
       <Header/>
+      <Landing_Page/>
       <Footer/>
     </body>
   );
