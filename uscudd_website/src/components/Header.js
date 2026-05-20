@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function Header() {
     return (
         <div>
@@ -5,12 +7,13 @@ function Header() {
                 <img src = ""></img>
             </header>
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Get Involved</li>
-                    <li>Contact Us</li>
-                </ul>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/about" element={<About_Us />} />
+                        <Route path="/contact" element={<Contact_Page />} />
+                        <Route path="/get-involved" element={<Get_Involved/>} />
+                    </Routes>
+                </BrowserRouter>
             </nav>
         </div>
     )

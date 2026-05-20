@@ -1,4 +1,5 @@
 // Step 1: Optional imports (CSS, components, or hooks)
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from "./Header";
 import Landing_Page from "./Landing_Page";
@@ -10,12 +11,16 @@ function App() {
   return (
     <body>
       <meta name="description" content="Little Lemon is a local Mediterranean restaurant focused on traditional recipes" />
-      <meta property="og:title" content="Little Lemon Restaurant" />
+      <meta property="og:title" content="United States Diaspora United Chamber of Commerce" />
       <meta property="og:description" content="Little Lemon is a local Mediterranean restaurant focused on traditional recipe" />
       <meta property="og:image" content="./public/restaurant-chefB.jpg" />
-      <Header/>
-      <Landing_Page/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/header" element={<Header />} />
+          <Route path="/landing-page" element={<Landing_Page />} />
+          <Route path="/footer" element={<Footer/>} />
+        </Routes>
+    </BrowserRouter>
     </body>
   );
 }
