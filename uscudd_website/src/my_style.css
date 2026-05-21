@@ -1,0 +1,23 @@
+h1 {
+    font: "roboto";
+    font-weight: bold;
+    font-size: 64p;
+}
+
+h2 {
+    font: "roboto";
+    font-weight: bold;
+    font-size: 48p;
+}
+
+p {
+    font: "roboto";
+    font-weight: regular;
+    font-size: 24p;
+}
+
+button {
+    font: "roboto";
+    color: #82AB7D;
+    font-color: #F9F9FB;
+}
