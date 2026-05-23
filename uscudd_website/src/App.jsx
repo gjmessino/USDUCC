@@ -10,10 +10,10 @@ import Footer from "./Footer";
 function App() {
   return (
     <body>
-      <meta name="description" content="Little Lemon is a local Mediterranean restaurant focused on traditional recipes" />
+      <meta name="description" content="Little Lemon" />
       <meta property="og:title" content="United States Diaspora United Chamber of Commerce" />
-      <meta property="og:description" content="Little Lemon is a local Mediterranean restaurant focused on traditional recipe" />
-      <meta property="og:image" content="./public/restaurant-chefB.jpg" />
+      <meta property="og:description" content="Little Lemon " />
+      <meta property="og:image" content="../logo.webp" />
       <BrowserRouter>
         <Routes>
           <Route path="/header" element={<Header />} />
@@ -24,7 +24,6 @@ function App() {
     </body>
   );
 }
-
 
 // Step 3: Export the component to use it in main.jsx or index.js
 export default App;
