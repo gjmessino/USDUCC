@@ -4,7 +4,7 @@ function Header() {
     return (
         <div>
             <header>
-                <img src = ""></img>
+                <img src = "../logo.webp"></img>
             </header>
             <nav>
                 <BrowserRouter>
