@@ -5,12 +5,15 @@
   "type": "module",
   "react-scripts": "3.2.0",
   "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "vite": "^8.0.12",
     "typescript": "3.3.3"
   },
   "browserlist": [
