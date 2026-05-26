@@ -10,10 +10,6 @@ import Footer from "./Footer";
 function App() {
   return (
     <body>
-      <meta name="description" content="Little Lemon" />
-      <meta property="og:title" content="United States Diaspora United Chamber of Commerce" />
-      <meta property="og:description" content="Little Lemon " />
-      <meta property="og:image" content="../logo.webp" />
       <BrowserRouter>
         <Routes>
           <Route path="/header" element={<Header />} />
