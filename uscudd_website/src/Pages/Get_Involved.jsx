@@ -7,3 +7,5 @@ function Get_Involved() {
         </div>
     )
 }
+
+export default Get_Involved();

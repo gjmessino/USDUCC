@@ -1,5 +1,5 @@
-import About from "./About"
-import Mission from "./Mission"
+import About from "../About.jsx"
+import Mission from "../Mission.jsx"
 
 function About_Us() {
     return (
@@ -11,3 +11,5 @@ function About_Us() {
 
     )
 }
+
+export default About_Us();

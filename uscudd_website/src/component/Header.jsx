@@ -1,4 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../Pages/Home.jsx";
+import About_Us from "../Pages/About_Us.jsx";
+import Contact_Page from "../Pages/Contact_Page.jsx";
+import Get_Involved from "../Pages/Get_Involved.jsx";
 
 function Header() {
     return (
