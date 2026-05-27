@@ -2,7 +2,7 @@ function PartnerWithUs() {
     return (
         <div class="cta-container">
             <div class="cta-image">
-                <img src="" alt="Vibrant community storefront">
+                <img src="assets/about_us.jpg" alt="Vibrant community storefront"/>
             </div>
             <div class="cta-content">
                 <h2>Partner with Us</h2>

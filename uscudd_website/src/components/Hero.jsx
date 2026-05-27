@@ -1,7 +1,7 @@
 function Hero() {
     return (
         <div>
-            <img src=""></img>
+            <img src="assets/hero.jpg"></img>
             <h1>Changing local business with
                 innovation and empowerment</h1>
             <p>The US Diaspora United Chamber

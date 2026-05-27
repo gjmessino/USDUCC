@@ -2,7 +2,7 @@ function Footer() {
     return(
         <footer>
             <div>
-                <img src = "" alt="USDUCC Logo Green"></img>
+                <img src = "assets/logo.webp" alt="USDUCC Logo Green"></img>
             </div>
             <div class = "socials">
                 <a href = "https://www.facebook.com/"></a>
