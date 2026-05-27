@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "../component/Hero.jsx"
-import Parters from "../component/Partners.jsx"
+import Partners from "../component/Partners.jsx"
 import Events from "../component/Events.jsx"
 
 function Home(){
@@ -17,4 +17,4 @@ function Home(){
     )
 }
 
-export default Home();
+export default Home;

@@ -11,4 +11,4 @@ function Membership_Intake() {
     )
 }
 
-export default Membership_Intake();
+export default Membership_Intake;

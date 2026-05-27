@@ -1,4 +1,6 @@
 import Home from "./Home.jsx"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function Landing_Page(){
     return(
         <div>
@@ -9,4 +11,4 @@ function Landing_Page(){
     )
 }
 
-export default Landing_Page();
+export default Landing_Page;

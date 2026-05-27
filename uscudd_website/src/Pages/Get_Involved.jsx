@@ -1,5 +1,5 @@
-import Membership_Intake from "../Forms/Membership_Intake.jsx"
-import Donation_Form from "../Forms/Donation_Form.jsx"
+import Membership_Intake from "../component/Forms/Membership_Intake.jsx"
+import Donation_Form from "../component/Forms/Donation_Form.jsx"
 
 function Get_Involved() {
     return (
@@ -11,4 +11,4 @@ function Get_Involved() {
     )
 }
 
-export default Get_Involved();
+export default Get_Involved;

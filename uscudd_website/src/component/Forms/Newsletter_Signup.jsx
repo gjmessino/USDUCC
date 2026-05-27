@@ -7,4 +7,4 @@ function Newsletter_Signup() {
     )
 }
 
-export default Newsletter_Signup();
+export default Newsletter_Signup;

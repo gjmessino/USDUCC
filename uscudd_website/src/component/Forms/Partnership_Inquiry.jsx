@@ -10,4 +10,4 @@ function Partnership_Inquiry() {
     )
 }
 
-export default Partnership_Inquiry();
+export default Partnership_Inquiry;

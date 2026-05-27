@@ -38,4 +38,4 @@ function Our_Approach() {
     )
 }
 
-export default Our_Approach();
+export default Our_Approach;

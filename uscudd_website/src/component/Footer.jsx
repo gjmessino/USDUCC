@@ -1,4 +1,4 @@
-import Subscribe from "./Forms/Subscribe_Form.jsx"
+import Subscribe_Form from "./Forms/Subscribe_Form.jsx"
 import About_Us from "../Pages/About_Us.jsx"
 import Get_Involved from "../Pages/Get_Involved.jsx";
 import Contact_Page from "../Pages/Contact_Page.jsx";
@@ -36,4 +36,4 @@ function Footer() {
     )
 }
 
-export default Footer();
+export default Footer;

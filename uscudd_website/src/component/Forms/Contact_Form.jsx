@@ -11,4 +11,4 @@ function Contact_Form() {
     )
 }
 
-export default Contact_Form();
+export default Contact_Form;

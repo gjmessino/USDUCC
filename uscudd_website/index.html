@@ -8,10 +8,11 @@
     <meta name="description" content="United States Diaspora United Chamber of Commerce" />
     <meta property="og:image" content="../logo.webp" />
   </head>
-  <body>
+  <div>
+  <!-- Give React one clean entry point -->
     <div id="root"></div>
-    <div id="app">
-      <script type="module" src="/src/main.jsx"></script>
-    </div>
-  </body>
+
+  <!-- Keep the script separate at the bottom of the body -->
+  <script type="module" src="/src/main.jsx"></script> 
+  </div>
 </html>

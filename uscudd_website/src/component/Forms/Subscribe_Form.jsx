@@ -8,4 +8,4 @@ function Subscribe_Form() {
     )
 }
 
-export default Subscribe_Form();
+export default Subscribe_Form;

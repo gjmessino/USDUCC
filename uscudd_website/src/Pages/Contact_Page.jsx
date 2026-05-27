@@ -9,4 +9,4 @@ function Contact_Page() {
     )
 }
 
-export default Contact_Page();
+export default Contact_Page;

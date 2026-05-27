@@ -1,13 +1,13 @@
 :root {
   /* Color Palette from Figma Swatches */
   --bg-light: #F9F9FB;
-  --purple-primary: #7B508F; /* Approximate from your purple swatch */
-  --green-accent: #82A786;   /* Approximate from your green swatch */
-  --text-dark: #221F24;     /* Purple-Black deep neutral */
+  --purple-primary: #A47DB0; /* Approximate from your purple swatch */
+  --green-accent: #82AB7D;   /* Approximate from your green swatch */
+  --text-dark: #2E2B2B;     /* Purple-Black deep neutral */
   --white: #ffffff;
 
   /* Gradients */
-  --purple-black-radial: radial-gradient(circle, #5A356C 0%, #1A121F 100%); 
+  --purple-black-radial: radial-gradient(circle, #692475 0%, #2E2B2B 100%); 
   /* Typography */
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
@@ -22,7 +22,12 @@ body {
   font-family: var(--font-main);
   background-color: var(--bg-light);
   color: var(--text-dark);
-  line-index: 1.6;
+  line-height: 1.6;
+}
+h1,h2,h3,p {
+  display: inline-block;
+  animation: slide 3s infinite alternate ease-in-out;
+  font: roboto;
 }
 
 /* ==========================================================================
