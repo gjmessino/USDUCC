@@ -1,12 +1,12 @@
-import About from "../About.jsx"
-import Mission from "../Mission.jsx"
+import About from "../component/About.jsx"
+import Mission from "../component/Mission.jsx"
+import Our_Approach from "../component/Our_Approach.jsx";
 
 function About_Us() {
     return (
         <div>
             <About/>
-            <Mission/>
-            <button>FAQs</button>
+            <Our_Approach/>
         </div>
 
     )

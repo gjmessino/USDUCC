@@ -1,9 +1,12 @@
+import Membership_Intake from "../Forms/Membership_Intake.jsx"
+import Donation_Form from "../Forms/Donation_Form.jsx"
+
 function Get_Involved() {
     return (
         <div>
-            <h3>Become a Member</h3>
-            <h3>Donate</h3>
-            <h3>Sign up for our newsletter</h3>
+            <img src="../assets/signup.jpg"/>
+            <Membership_Intake/>
+            <Donation_Form/>
         </div>
     )
 }

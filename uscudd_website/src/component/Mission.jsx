@@ -1,7 +1,7 @@
 function Mission() {
     return (
         <div>
-            <img src = ""></img>
+            <img src = "../assets/our_mission.jpg"></img>
             <h3>Our Mission</h3>
             <p>By addressing documented gaps in
                 support systems for Diaspora and

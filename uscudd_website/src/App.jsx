@@ -9,32 +9,16 @@ import Footer from "./component/Footer.jsx";
 function App() {
   return (
     <body id="app">
-      <script src="main.js"></script>
       <BrowserRouter>
-        <Header />
+        <Header/>
         <Routes>
           <Route path="/landing-page" element={<Landing_Page />} /> 
         </Routes>
-        <Footer />
+        <Footer/>
       </BrowserRouter>
     </body>
   );
 }
-
-
-// function App() {
-//   return (
-//     <body id="app">
-//       <BrowserRouter>
-//         <Routes>
-//           <Route path="/header" element={<Header />} />
-//           <Route path="/landing-page" element={<Landing_Page />} />
-//           <Route path="/footer" element={<Footer/>} />
-//         </Routes>
-//     </BrowserRouter>
-//     </body>
-//   );
-// }
 
 // Step 3: Export the component to use it in main.jsx or index.js
 export default App;
