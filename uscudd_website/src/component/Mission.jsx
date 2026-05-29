@@ -1,7 +1,9 @@
+import our_mission from "../assets/our_mission.jpg"
+
 function Mission() {
     return (
         <div>
-            <img src = "../assets/our_mission.jpg"></img>
+            <img src = {"our_mission"} alt="mission"></img>
             <h3>Our Mission</h3>
             <p>By addressing documented gaps in
                 support systems for Diaspora and

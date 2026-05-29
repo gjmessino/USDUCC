@@ -1,7 +1,9 @@
+import hero from "../assets/hero.jpg"
+
 function Hero() {
     return (
         <div>
-            <img src="assets/hero.jpg"></img>
+            <img src={hero} alt="hero"></img>
             <h1>Changing local business
                 with innovation and
                 empowerment</h1>

@@ -1,9 +1,12 @@
+import our_approach1 from "../assets/our_approach1.jpg"
+import our_approach2 from "../assets/our_approach2.jpg"
+
 function Our_Approach() {
     return (
         <div>
             <h1>Our Approach</h1>
-            <img src="../assets/our_appraoch1.jpg"/>
-            <img src="../assets/our_appraoch2.jpg"/>
+            <img src={our_approach1} alt="our approach 1"/>
+            <img src={our_approach2} alt="our approach 2"/>
             <div>
                 <div>
                     <p>Research and Analysis</p>

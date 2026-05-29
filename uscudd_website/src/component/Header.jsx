@@ -3,14 +3,14 @@ import Home from "../Pages/Home.jsx";
 import About_Us from "../Pages/About_Us.jsx";
 import Contact_Page from "../Pages/Contact_Page.jsx";
 import Get_Involved from "../Pages/Get_Involved.jsx";
+import logo from '../assets/logo.webp';
 
 function Header() {
     return (
         <header>
-            <img src = "assets/hero.jpg"></img>
             <div className="nav-logo">
                 <Link to="/home">
-                    <img src="/assets/logo.png" alt="USDUCC Logo" />
+                    <img src={logo} alt="Logo" />
                 </Link>
             </div>
             <nav>

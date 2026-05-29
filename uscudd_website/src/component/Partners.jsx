@@ -1,8 +1,10 @@
+import partners from "../assets/partners.png"
+
 function Partners() {
     return (
         <div>
             <h2>Our Partners</h2>
-            <img src="assets/about_us.jpg"></img>
+            <img src={partners} alt="partners"></img>
         </div>
     )
 }
