@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Membership_Intake() {
     const [form,setForm] = useState({name: "", email: "", phone: "", company: ""});
     const handleChange = (e) => setForm({...form, [e.target.name]: [e.target.value]});
