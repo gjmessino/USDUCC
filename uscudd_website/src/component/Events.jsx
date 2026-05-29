@@ -3,15 +3,15 @@ function Events() {
         <div>
             <h2>Upcoming Events</h2>
             <div>
-                <img src=""/>
+                <img src="../assets/vite.svg"/>
                 <p>decription</p>
             </div>
             <div>
-                <img src=""/>
+                <img src="../assets/vite.svg"/>
                 <p>decription</p>
             </div>
             <div>
-                <img src=""/>
+                <img src="../assets/vite.svg"/>
                 <p>decription</p>
             </div>
         </div>

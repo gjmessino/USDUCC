@@ -12,8 +12,9 @@ import Footer from "./component/Footer.jsx";
 // Note: Component names must start with a Capital letter
 function App() {
   return (
-    <body id="app">
+    <div id="app">
       <BrowserRouter>
+        <Header/>
         <Routes>
           <Route path="/" element={<Landing_Page />} />
           <Route path="/home" element={<Home />} />
@@ -21,8 +22,9 @@ function App() {
           <Route path="/get-involved" element={<Get_Involved />} />
           <Route path="/contact" element={<Contact_Page />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
-    </body>
+    </div>
   );
 }
 

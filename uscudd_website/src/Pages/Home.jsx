@@ -1,19 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "../component/Hero.jsx"
 import Partners from "../component/Partners.jsx"
 import Events from "../component/Events.jsx"
 
 function Home(){
     return(
-        <BrowserRouter>
-            <Routes>
-                <Route>
-                    <Hero/>
-                    <Partners/>
-                    <Events/>
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <div>
+            <Hero/>
+            <Partners/>
+            <Events/>
+        </div>
+
     )
 }
 
