@@ -8,7 +8,7 @@ function Membership_Intake() {
         console.log("Donation form submitted:", form)
     return(
         <div className = "container">
-            <h1>Become a Member</h1>
+            <h1 className="reveal">Become a Member</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name</label>
                 <input id="name" name="name" type="text" value={form.name} onChange={handleChange} required />

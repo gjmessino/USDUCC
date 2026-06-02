@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return(
-        <footer>
+        <footer className="main-footer">
             <Subscribe_Form/>
             <div className = "socials">
                 <ul>
@@ -16,7 +16,7 @@ function Footer() {
                     <li><a href = "https://x.com/"/></li>
                 </ul>
             </div>
-            <div className = "footer_link">
+            <div className = "footer_links">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><Link to="/about">About Us</Link></li>

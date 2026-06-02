@@ -1,4 +1,5 @@
 import { useState } from "react";
+import membership from "../../assets/membership.jpg"
 
 function Membership_Intake() {
     const [form,setForm] = useState({name: "", email: "", phone: "", company: ""});
@@ -7,9 +8,10 @@ function Membership_Intake() {
         e.preventDefault();
         console.log("Membership form submitted:", form)
     return(
-        <div className = "container">
-            <h1>Become a Member</h1>
-            <form onSubmit={handleSubmit}>
+        <div className = "membership-section">
+            <img src={membership} className = "membership-image"/>
+            <h1 className="reveal">Become a Member</h1>
+            <form onSubmit={handleSubmit} className="membership-form-panel">
                 <label htmlFor="name">Name</label>
                 <input id="name" name="name" type="text" value={form.name} onChange={handleChange} required />
 

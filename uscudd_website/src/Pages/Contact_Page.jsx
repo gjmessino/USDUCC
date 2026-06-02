@@ -3,7 +3,7 @@ import contact from "../assets/contact.jpg"
 
 function Contact_Page() {
     return (
-        <div>
+        <div className="contact-section">
             <img src={contact} alt = "contact"/>
             <Contact_Form/>
         </div>

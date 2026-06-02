@@ -1,7 +1,7 @@
 function Partnership_Inquiry() {
     return (
         <div>
-            <h1>Partnership Inquiry Form</h1>
+            <h1 className="reveal">Partnership Inquiry Form</h1>
             <input type = "text">Company Name</input>
             <input type = "email">Email Address</input>
             <input type = "tel">Phone Number</input>

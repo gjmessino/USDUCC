@@ -1,4 +1,5 @@
 import Home from "./Home.jsx"
+import logo from "../assets/"
 import { useNavigate } from "react-router-dom";
 
 function Landing_Page() {

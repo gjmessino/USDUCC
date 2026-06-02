@@ -2,9 +2,9 @@ import hero from "../assets/hero.jpg"
 
 function Hero() {
     return (
-        <div>
-            <img src={hero} alt="hero"></img>
-            <h1>Changing local business
+        <div className="home-banner">
+            <img className = "banner-image"src={hero} alt="hero"></img>
+            <h1 class="banner-text">Changing local business
                 with innovation and
                 empowerment</h1>
         </div>

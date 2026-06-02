@@ -7,7 +7,7 @@ import logo from '../assets/logo.webp';
 
 function Header() {
     return (
-        <header>
+        <header className="header-bg">
             <div className="nav-logo">
                 <Link to="/home">
                     <img src={logo} alt="Logo" />

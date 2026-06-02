@@ -2,9 +2,9 @@ import partners from "../assets/partners.png"
 
 function Partners() {
     return (
-        <div>
+        <div className="partners-section">
             <h2>Our Partners</h2>
-            <img src={partners} alt="partners"></img>
+            <img src={partners} alt="partners" className="partner-logo"></img>
         </div>
     )
 }

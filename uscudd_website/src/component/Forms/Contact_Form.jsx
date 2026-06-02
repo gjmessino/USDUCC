@@ -10,9 +10,9 @@ function Contact_Form() {
   };
 
   return (
-    <div className="container">
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
+    <div className="contact-bg">
+      <h1 className="reveal">Contact Us</h1>
+      <form onSubmit={handleSubmit} className = "contact-form-panel">
         <label htmlFor="name">Name</label>
         <input id="name" name="name" type="text" value={form.name} onChange={handleChange} required />
 
