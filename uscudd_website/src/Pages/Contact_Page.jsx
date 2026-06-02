@@ -1,13 +1,20 @@
-import Contact_Form from "../component/Forms/Contact_Form.jsx"
-import contact from "../assets/contact.jpg"
+import ContactForm from "../component/Forms/Contact_Form.jsx";
+import contactImg from "../assets/contact.jpg";
 
-function Contact_Page() {
-    return (
-        <div className="contact-section">
-            <img src={contact} alt = "contact"/>
-            <Contact_Form/>
+function ContactPage() {
+  return (
+    <main>
+      <div className="contact-section">
+        <div className="contact-bg">
+          <img src={contactImg} alt="" aria-hidden="true" />
         </div>
-    )
+        <div className="contact-form-panel">
+          <h1 className="reveal">Contact Us</h1>
+          <ContactForm />
+        </div>
+      </div>
+    </main>
+  );
 }
 
-export default Contact_Page;
+export default ContactPage;

@@ -1,30 +1,27 @@
-import { Link } from "react-router-dom";
-import Home from "../Pages/Home.jsx";
-import About_Us from "../Pages/About_Us.jsx";
-import Contact_Page from "../Pages/Contact_Page.jsx";
-import Get_Involved from "../Pages/Get_Involved.jsx";
-import logo from '../assets/logo.webp';
+import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 function Header() {
-    return (
-        <header className="header-bg">
-            <div className='navbar'>
-                 <div className="nav-logo">
-                    <Link to="/home">
-                        <img src={logo} alt="Logo" />
-                    </Link>
-                </div>
-                <nav>
-                    <ul className="nav-links">
-                        <li><Link to="/home">Home</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/get-involved">Get Involved</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                    </ul>
-            </nav>
-            </div>
-        </header>
-    )
+  const location = useLocation();
+  const isActive = (path) => location.pathname === path ? "active" : "";
+
+  return (
+    <header className="navbar">
+      <div className="nav-logo">
+        <Link to="/home">
+          <img src={logo} alt="USDUCC logo" />
+        </Link>
+      </div>
+      <nav>
+        <ul className="nav-links">
+          <li><Link to="/home" className={isActive("/home")}>Home</Link></li>
+          <li><Link to="/about" className={isActive("/about")}>About Us</Link></li>
+          <li><Link to="/get-involved" className={isActive("/get-involved")}>Get Involved</Link></li>
+          <li><Link to="/contact" className={isActive("/contact")}>Contact</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;

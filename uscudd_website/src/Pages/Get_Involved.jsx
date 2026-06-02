@@ -1,17 +1,32 @@
-import Membership_Intake from "../component/Forms/Membership_Intake.jsx"
-import Donation_Form from "../component/Forms/Donation_Form.jsx"
-import signup from "../assets/signup.jpg"
-import membership from "../assets/membership.jpg"
+import MembershipIntake from "../component/Forms/Membership_Intake.jsx";
+import DonationForm from "../component/Forms/Donation_Form.jsx";
+import signupImg from "../assets/signup.jpg";
+import donateImg from "../assets/donate.jpg";
 
-function Get_Involved() {
-    return (
-        <div>
-            <img src={signup}/>
-            <Membership_Intake/>
-            <img src={membership}></img>
-            <Donation_Form/>
+function GetInvolved() {
+  return (
+    <main>
+      <div className="membership-section">
+        <div className="membership-image">
+          <img src={signupImg} alt="Become a member" />
         </div>
-    )
+        <div className="membership-form-panel">
+          <h1 className="reveal">Become a Member</h1>
+          <MembershipIntake />
+        </div>
+      </div>
+
+      <div className="donation-section">
+        <div className="donation-bg">
+          <img src={donateImg} alt="" aria-hidden="true" />
+        </div>
+        <div className="donation-content">
+          <h2 className="reveal">Donate</h2>
+          <DonationForm />
+        </div>
+      </div>
+    </main>
+  );
 }
 
-export default Get_Involved;
+export default GetInvolved;

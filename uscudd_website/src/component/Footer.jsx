@@ -1,35 +1,43 @@
-import Subscribe_Form from "./Forms/Subscribe_Form.jsx"
-import About_Us from "../Pages/About_Us.jsx"
-import Get_Involved from "../Pages/Get_Involved.jsx";
-import Contact_Page from "../Pages/Contact_Page.jsx";
 import { Link } from "react-router-dom";
+import SubscribeForm from "./Forms/Subscribe_Form.jsx";
 
 function Footer() {
-    return(
-        <div className='main-footer'>
-            <footer className="footer-top">
-                <div className='footer-newsletter'>
-                    <Subscribe_Form/>
-                </div>
-                <div className = "footer-socials">
-                    <ul>
-                        <li><a href = "https://www.facebook.com/"/></li>
-                        <li><a href = "https://www.linkedin.com"/></li>
-                        <li><a href ="https://www.instagram.com/?hl=en"/></li><a href ="https://www.instagram.com/?hl=en"/>
-                        <li><a href = "https://x.com/"/></li>
-                    </ul>
-                </div>
-                <div className = "footer_links">
-                    <h3>Quick Links</h3>
-                    <ul className='footer-links-col'>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to = "/get_involved">Get Involved</Link></li>
-                        <li><Link to ="/contact">Contact Us</Link></li>
-                    </ul>
-                </div>
-            </footer>
+  return (
+    <footer className="main-footer">
+      <div className="footer-top">
+        <div className="footer-newsletter">
+          <SubscribeForm />
+          <div className="footer-socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="social-icon">fb</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="social-icon">in</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="social-icon">ig</a>
+            <a href="https://x.com/" target="_blank" rel="noreferrer" className="social-icon">x</a>
+          </div>
         </div>
-    )
+        <div className="footer-links">
+          <div className="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/get-involved">Join Us</Link></li>
+              <li><Link to="/get-involved">Donate</Link></li>
+            </ul>
+          </div>
+          <div className="footer-links-col">
+            <h4>Need Help?</h4>
+            <ul>
+              <li><Link to="/contact">FAQs</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/contact">Careers</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} USDUCC. All rights reserved.</span>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
