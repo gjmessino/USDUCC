@@ -10,23 +10,25 @@ function Contact_Form() {
   };
 
   return (
-    <div className="contact-bg">
-      <h1 className="reveal">Contact Us</h1>
-      <form onSubmit={handleSubmit} className = "contact-form-panel">
-        <label htmlFor="name">Name</label>
-        <input id="name" name="name" type="text" value={form.name} onChange={handleChange} required />
+    <div className='form-group'>
+      <div className="contact-bg">
+        <h1 className="reveal">Contact Us</h1>
+        <form onSubmit={handleSubmit} className = "contact-form-panel">
+          <label htmlFor="name">Name</label>
+          <input id="name" name="name" type="text" value={form.name} onChange={handleChange} required />
 
-        <label htmlFor="email">Email Address</label>
-        <input id="email" name="email" type="email" value={form.email} onChange={handleChange} required />
+          <label htmlFor="email">Email Address</label>
+          <input id="email" name="email" type="email" value={form.email} onChange={handleChange} required />
 
-        <label htmlFor="phone">Phone Number</label>
-        <input id="phone" name="phone" type="tel" value={form.phone} onChange={handleChange} />
+          <label htmlFor="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" value={form.phone} onChange={handleChange} />
 
-        <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" value={form.message} onChange={handleChange} required rows={5} />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" value={form.message} onChange={handleChange} required rows={5} />
 
-        <button type="submit" className="btn-primary">Submit</button>
-      </form>
+          <button type="submit" className="btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ function SubscribeForm() {
 
   return (
     <div className="footer-newsletter">
-      <h3>Join Our Newsletter</h3>
+      <h3 className="reveal">Join Our Newsletter</h3>
       <form onSubmit={handleSubmit} className="newsletter-form">
         <label htmlFor="subscribe-email" style={{ display: "none" }}>Email address</label>
         <input

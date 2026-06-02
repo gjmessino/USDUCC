@@ -4,7 +4,7 @@ function Hero() {
     return (
         <div className="home-banner">
             <img className = "banner-image"src={hero} alt="hero"></img>
-            <h1 class="banner-text">Changing local business
+            <h1 className="reveal" class="banner-text">Changing local business
                 with innovation and
                 empowerment</h1>
         </div>

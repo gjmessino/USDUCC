@@ -6,25 +6,29 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return(
-        <footer className="main-footer">
-            <Subscribe_Form/>
-            <div className = "socials">
-                <ul>
-                    <li><a href = "https://www.facebook.com/"/></li>
-                    <li><a href = "https://www.linkedin.com"/></li>
-                    <li><a href ="https://www.instagram.com/?hl=en"/></li><a href ="https://www.instagram.com/?hl=en"/>
-                    <li><a href = "https://x.com/"/></li>
-                </ul>
-            </div>
-            <div className = "footer_links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to = "/get_involved">Get Involved</Link></li>
-                    <li><Link to ="/contact">Contact Us</Link></li>
-                </ul>
-            </div>
-        </footer>
+        <div className='main-footer'>
+            <footer className="footer-top">
+                <div className='footer-newsletter'>
+                    <Subscribe_Form/>
+                </div>
+                <div className = "footer-socials">
+                    <ul>
+                        <li><a href = "https://www.facebook.com/"/></li>
+                        <li><a href = "https://www.linkedin.com"/></li>
+                        <li><a href ="https://www.instagram.com/?hl=en"/></li><a href ="https://www.instagram.com/?hl=en"/>
+                        <li><a href = "https://x.com/"/></li>
+                    </ul>
+                </div>
+                <div className = "footer_links">
+                    <h3>Quick Links</h3>
+                    <ul className='footer-links-col'>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to = "/get_involved">Get Involved</Link></li>
+                        <li><Link to ="/contact">Contact Us</Link></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     )
 }
 

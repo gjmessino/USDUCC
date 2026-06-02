@@ -8,19 +8,21 @@ import logo from '../assets/logo.webp';
 function Header() {
     return (
         <header className="header-bg">
-            <div className="nav-logo">
-                <Link to="/home">
-                    <img src={logo} alt="Logo" />
-                </Link>
-            </div>
-            <nav>
-                <ul className="nav-links">
-                <li><Link to="/home">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/get-involved">Get Involved</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                </ul>
+            <div className='navbar'>
+                 <div className="nav-logo">
+                    <Link to="/home">
+                        <img src={logo} alt="Logo" />
+                    </Link>
+                </div>
+                <nav>
+                    <ul className="nav-links">
+                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/get-involved">Get Involved</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
             </nav>
+            </div>
         </header>
     )
 }
