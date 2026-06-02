@@ -8,8 +8,6 @@ function LandingPage() {
       <div className="landing-logo-container">
         <img src={logo} alt="USDUCC logo" />
       </div>
-      <h1 className="landing-title">US Diaspora United</h1>
-      <p className="landing-subtitle">Chamber of Commerce</p>
       <button className="btn-primary" onClick={() => navigate("/home")}>
         Enter Website
       </button>
