@@ -1,5 +1,4 @@
 import MembershipIntake from "../component/Forms/Membership_Intake.jsx";
-import DonationForm from "../component/Forms/Donation_Form.jsx";
 import signupImg from "../assets/signup.jpg";
 import PartnershipInquiry from "../component/Forms/Partnership_Inquiry.jsx";
 import partnerImg from "../assets/partner_inquiry.jpg"
@@ -16,14 +15,17 @@ function GetInvolved() {
           <MembershipIntake />
         </div>
       </div>
-
-      <div className="donation-section">
-        <div className="donation-bg">
-          <img src={donateImg} alt="" aria-hidden="true" />
+      <div className="partnership-section">
+        <div className="partnership-bg">
+          <img src={partnerImg} alt="" aria-hidden="true" />
         </div>
-        <div className="donation-content">
-          <h2 className="reveal">Donate</h2>
-          <DonationForm />
+        <div className="partnership-content">
+          <h2 className="reveal">Partner with Us</h2>
+          <p className="section-intro reveal">
+            Join our network of partners committed to supporting diaspora and
+            immigrant entrepreneurs.
+          </p>
+          <PartnershipInquiry />
         </div>
       </div>
     </main>
