@@ -29,7 +29,7 @@ function Footer() {
             <ul>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/get-involved">Join Us</Link></li>
-              <li><Link to="/get-involved">Donate</Link></li>
+              <li><Link to="/home">Donate</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>

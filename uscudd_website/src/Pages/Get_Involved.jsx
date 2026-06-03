@@ -20,7 +20,7 @@ function GetInvolved() {
           <img src={partnerImg} alt="" aria-hidden="true" />
         </div>
         <div className="partnership-content">
-          <h2 className="reveal">Partner with Us</h2>
+          <h1 className="reveal">Partner with Us</h1>
           <p className="section-intro reveal">
             Join our network of partners committed to supporting diaspora and
             immigrant entrepreneurs.

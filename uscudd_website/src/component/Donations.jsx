@@ -5,7 +5,7 @@ function Donations(){
     return (
         <div className="donation-section">
         <div className="donation-bg">
-          <img src={donateImg} alt="" aria-hidden="true" />
+          <img src={donateImg} aria-hidden="true" />
         </div>
         <div className="donation-content">
           <h2 className="reveal">Donate</h2>

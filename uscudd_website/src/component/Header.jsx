@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png"
+import navlogo from "../assets/navlogo.png"
 
 function Header() {
   const location = useLocation();
@@ -9,7 +9,7 @@ function Header() {
     <header className="navbar">
       <div className="nav-logo">
         <Link to="/home">
-          <img src={logo} alt="USDUCC logo" />
+          <img src={navlogo} alt="USDUCC logo" />
         </Link>
       </div>
       <nav>
