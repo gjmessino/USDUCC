@@ -1,7 +1,8 @@
 import MembershipIntake from "../component/Forms/Membership_Intake.jsx";
 import DonationForm from "../component/Forms/Donation_Form.jsx";
 import signupImg from "../assets/signup.jpg";
-import donateImg from "../assets/donate.jpg";
+import PartnershipInquiry from "../component/Forms/Partnership_Inquiry.jsx";
+import partnerImg from "../assets/partner_inquiry.jpg"
 
 function GetInvolved() {
   return (
