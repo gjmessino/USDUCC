@@ -1,29 +1,55 @@
+import { Link } from "react-router-dom";
+import scale_logo from "../assets/scale-logo.png"
+
 function Find_Help() {
     return (
         <div className="findHelp-section">
+            <h1 className="reveal">Resources for Your Small Business</h1>
             <div className="california-section">
-                <a href="https://calosba.ca.gov/">
-                    <h2>CalOSBA</h2>
-                    <p>The California Office of the Small Business 
-                        Advocate supports economic growth by providing 
-                        resources and support to the state’s 4.3 million 
-                        small businesses, including non-profits and startups.
-                        Their mission is to help all California small 
-                        business-owners find and navigate resources, 
-                        programs and regulations so they can start, manage, 
-                        grow, become more resilient, and thrive.</p>
-                </a>
+                <img src ={scale_logo}/>
+                <p className="reveal">
+                    SCALE: Success, Capital Access and Leadership
+                    for Entrepreneurs was created by the California
+                    Office of the Small Business Advocate (CalOSBA)
+                    to help California’s diverse small businesses
+                    across the state access more resources to start
+                    up, grow, and create jobs.
+                </p>
+                <Link to="/scale">Learn More</Link>
             </div>
             <div className="non-california-section">
-                <h2>Find Support in Your Area</h2>
-                <div className="support-card">
-                    <h3>Legal Assistance</h3>
-                </div>
-                <div className="support-card">
-                    <h3>Financial Management</h3>
-                </div>
-                <div className="support-card">
-                    <h3>Funding</h3>
+                <h2 className="reveal">Find Support in Your Area</h2>
+                <div className="support-cards-grid">
+                    <div className="support-card">
+                        <h3>Legal Assistance</h3>
+                        <p>
+                            Description...
+                            ...
+                            ...
+                            ...
+                            ...
+                        </p>
+                    </div>
+                    <div className="support-card">
+                        <h3>Financial Management</h3>
+                        <p>
+                            Description...
+                            ...
+                            ...
+                            ...
+                            ...
+                        </p>
+                    </div>
+                    <div className="support-card">
+                        <h3>Funding</h3>
+                        <p>
+                            Description...
+                            ...
+                            ...
+                            ...
+                            ...
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

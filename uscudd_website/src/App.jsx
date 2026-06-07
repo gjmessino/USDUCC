@@ -8,6 +8,7 @@ import Get_Involved from "./Pages/Get_Involved.jsx"
 import Find_Help from "./Pages/Find_Help.jsx"
 import Contact_Page from "./Pages/Contact_Page.jsx"
 import Faq from "./Pages/FAQ_Page.jsx"
+import Scale from "./Pages/Scale.jsx"
 import Footer from "./component/Footer.jsx";
 import useScrollReveal from "./useScrollReveal.js";
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/get-involved" element={<Get_Involved />} />
           <Route path="/find-help" element={<Find_Help/>}/>
           <Route path="/contact" element={<Contact_Page />} />
+          <Route path="/scale" element={<Scale />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
