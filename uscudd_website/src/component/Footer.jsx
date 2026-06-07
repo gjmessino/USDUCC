@@ -28,9 +28,16 @@ function Footer() {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/get-involved">Join Us</Link></li>
               <li><Link to="/home">Donate</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
+            </ul>
+          </div>
+          <div className="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><Link to="/get-involved">Join Us</Link></li>
+              <a href = "https://sfchamber.com/about/jobs/">Careers</a>
+              <li><Link to="/faq">FAQ</Link></li>
             </ul>
           </div>
         </div>

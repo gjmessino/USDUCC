@@ -27,7 +27,7 @@ function PartnershipInquiry() {
         <textarea id="p-reason" name="reason" value={form.reason} onChange={handleChange} required rows={4} />
       </div>
       <div className="form-submit">
-        <button type="submit" className="btn-primary">Submit Inquiry</button>
+        <button type="submit" className="btn-primary">Submit</button>
       </div>
     </form>
   );

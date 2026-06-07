@@ -17,6 +17,7 @@ function Header() {
           <li><Link to="/home" className={isActive("/home")}>Home</Link></li>
           <li><Link to="/about" className={isActive("/about")}>About Us</Link></li>
           <li><Link to="/get-involved" className={isActive("/get-involved")}>Get Involved</Link></li>
+          <li><Link to="/find-help" className={isActive("/find_help")}>Find Help</Link></li>
           <li><Link to="/contact" className={isActive("/contact")}>Contact</Link></li>
         </ul>
       </nav>

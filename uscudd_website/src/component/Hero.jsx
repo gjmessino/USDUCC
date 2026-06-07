@@ -7,7 +7,7 @@ function Hero() {
         <img src={heroImg} alt="USDUCC hero" />
       </div>
       <div className="banner-text">
-        <h1 className="reveal-right">Changing local business with innovation and empowerment</h1>
+        <h1 className="reveal-right">Changing small business with innovation and empowerment</h1>
       </div>
     </div>
   );
