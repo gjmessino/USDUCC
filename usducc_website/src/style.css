@@ -425,7 +425,8 @@ ul { list-style: none; }
   width: 100%;
   border-radius: var(--radius-lg);
   object-fit: cover;
-  max-height: 400px;
+  object-position: top;
+  max-height: 500px;
 }
 
 /* ==========================================================================
@@ -647,7 +648,7 @@ ul { list-style: none; }
 
 .findHelp-section > h1 {
   font-family: var(--font-body);
-  font-size: 1.25rem;
+  font-size: 1.50 rem;
   font-weight: 700;
   color: var(--text-dark);
   text-align: center;
@@ -676,8 +677,11 @@ ul { list-style: none; }
 }
 
 /* "Learn More" button — matches the outlined style in the screenshot */
-.find-help-links {
-  display: inline-block;
+.find-help-link {
+  display: block;
+  width: max-content;
+  margin-left: auto;  
+  margin-right: auto;      
   padding: 10px 28px;
   border-radius: var(--radius-sm);
   background: #4170B1;
@@ -685,11 +689,11 @@ ul { list-style: none; }
   font-size: 0.95rem;
   font-weight: 500;
   font-family: var(--font-body);
-  transition: background 0.2s, color 0.2s;
   margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
 }
 
-.find-help-links:hover {
+.find-help-link:hover {
   background: #23417b;
   color: var(--white);
 }
@@ -816,7 +820,7 @@ ul { list-style: none; }
 }
 
 .scale-resources > p {
-  font-size: 0.93rem;
+  font-size: 1 rem;
   color: var(--text-body);
   line-height: 1.8;
 }
@@ -860,7 +864,7 @@ ul { list-style: none; }
 }
 
 .scale-cta a {
-  display: inline-block;
+  display: inline-block; 
   padding: 11px 28px;
   border: none;
   background: #4170B1;
@@ -870,7 +874,6 @@ ul { list-style: none; }
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 .scale-cta a:hover {
