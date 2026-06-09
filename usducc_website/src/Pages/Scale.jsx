@@ -28,13 +28,13 @@ function Scale() {
           <div className="scale-card reveal-right"><p>Preparing loan applications.</p></div>
           <div className="scale-card reveal-right"><p>Determining what financing products are the best fit.</p></div>
         </div>
+        {/* CTA */}
+        <div className="scale-cta">
+            <a href="https://calosba.ca.gov/" target="_blank" rel="noreferrer">
+                I Want to Scale
+            </a>
+        </div>
       </div>
-
-      {/* CTA */}
-      <a href="https://calosba.ca.gov/scale" target="_blank" rel="noreferrer">
-        I Want to Scale
-      </a>
-
       {/* More on Scale */}
       <div className="more-scale">
         <h2 className="more-scale-heading">More on SCALE</h2>

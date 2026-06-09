@@ -15,6 +15,8 @@ function Find_Help() {
                     across the state access more resources to start
                     up, grow, and create jobs.
                 </p>
+            </div>
+            <div className="find-help-link">
                 <Link to="/scale">Learn More</Link>
             </div>
             <div className="non-california-section">

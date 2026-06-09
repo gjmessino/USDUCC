@@ -676,10 +676,9 @@ ul { list-style: none; }
 }
 
 /* "Learn More" button — matches the outlined style in the screenshot */
-.california-section a {
+.find-help-links {
   display: inline-block;
   padding: 10px 28px;
-  border: 2px solid #4170B1;
   border-radius: var(--radius-sm);
   background: #4170B1;
   color: var(--white);
@@ -690,7 +689,7 @@ ul { list-style: none; }
   margin-top: var(--space-xs);
 }
 
-.california-section a:hover {
+.find-help-links:hover {
   background: #23417b;
   color: var(--white);
 }
@@ -757,6 +756,213 @@ ul { list-style: none; }
    SCALE PAGE
    ========================================================================== */
 
+.scale-section {
+  background: var(--off-white);
+}
+
+/* --- Hero banner — same pattern as .home-banner --- */
+.scale-hero-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scale-hero {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.scale-hero-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(74, 32, 96, 0.65) 100%
+  );
+}
+
+.scale-hero-wrapper h1 {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+  padding: var(--space-lg) var(--space-md);
+}
+
+/* --- Resources section — white bg, text left / cards right --- */
+.scale-resources {
+  background: var(--off-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+  padding: var(--space-lg) 5%;
+}
+
+.scale-resources > p {
+  font-size: 0.93rem;
+  color: var(--text-body);
+  line-height: 1.8;
+}
+
+.scale-resources > p strong {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+/* Cards — same purple as support-card / approach cards */
+.scale-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.scale-card {
+  background: var(--purple-mid, #7b4a9e);
+  border-radius: var(--radius-md);
+  padding: 14px var(--space-sm);
+  transition: transform 0.2s var(--ease-out), box-shadow 0.2s ease;
+}
+
+.scale-card:hover {
+  transform: translateX(-3px);
+  box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+.scale-card p {
+  font-size: 0.88rem;
+  color: var(--white);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- CTA — centered, same pill button style --- */
+.scale-cta {
+  background: var(--off-white);
+  padding: var(--space-md) 5% var(--space-lg);
+  text-align: center;
+}
+
+.scale-cta a {
+  display: inline-block;
+  padding: 11px 28px;
+  border: none;
+  background: #4170B1;
+  color: var(--white);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.scale-cta a:hover {
+  background: #23417b;
+  transform: translateY(-2px);
+}
+
+/* --- More on SCALE — dark section, same as mission/approach --- */
+.more-scale {
+  background: var(--dark-section);
+  color: var(--white);
+  padding: var(--space-lg) 5%;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-sm) var(--space-lg);
+  align-items: start;
+}
+
+.more-scale-heading {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+
+.more-scale-images {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.more-scale-images img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.more-scale-text {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.more-scale-text p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.8;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .scale-resources {
+    grid-template-columns: 1fr;
+  }
+
+  .more-scale {
+    grid-template-columns: 1fr;
+  }
+
+  .more-scale-images {
+    grid-row: auto;
+    flex-direction: row;
+  }
+
+  .more-scale-images img {
+    flex: 1;
+    height: 140px;
+  }
+
+  .more-scale-text {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .scale-hero-wrapper h1 { font-size: 2rem; }
+  .scale-resources       { padding: var(--space-md) 5%; }
+  .more-scale            { padding: var(--space-md) 5%; }
+
+  .more-scale-images {
+    flex-direction: column;
+  }
+}
 
 /* ==========================================================================
    FORMS — shared
