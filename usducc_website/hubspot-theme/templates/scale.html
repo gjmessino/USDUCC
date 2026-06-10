@@ -1,0 +1,81 @@
+<!--
+  templateType: page
+  label: "Scale"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ content.html_title }}</title>
+  {{ standard_header_includes }}
+  <link rel="stylesheet" href="{{ get_asset_url('../css/main.css') }}">
+</head>
+<body>
+
+{% include "./partials/header.html" %}
+
+<main>
+  <div class="scale-section">
+
+    <!-- HERO -->
+    <div class="scale-hero-wrapper">
+      <img src="{{ get_asset_url('../images/scale_hero.jpg') }}" class="scale-hero reveal-scale" alt="Scale hero">
+      <h1 class="reveal">Scale Up<br>Your Business</h1>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="scale-resources">
+      <p class="reveal">
+        <strong>USDUCC</strong> is honored to participate in this program as a resource
+        partner, working to ensure underserved small businesses, including businesses
+        run by women, people of color, people with disabilities, and veterans, as well
+        as businesses in low-to-moderate-wealth, rural, or disaster-impacted communities,
+        are ready to access this funding. This work will include:
+      </p>
+      <div class="scale-cards-grid">
+        <div class="scale-card reveal-right"><p>Raising awareness of funding opportunities.</p></div>
+        <div class="scale-card reveal-right"><p>Providing one-on-one coaching to help business owners navigate the loan process.</p></div>
+        <div class="scale-card reveal-right"><p>Providing one-on-one coaching and training on financial, legal, and accounting topics.</p></div>
+        <div class="scale-card reveal-right"><p>Preparing loan applications.</p></div>
+        <div class="scale-card reveal-right"><p>Determining what financing products are the best fit.</p></div>
+      </div>
+    </div>
+
+    <div class="scale-cta">
+      <a href="https://calosba.ca.gov/" target="_blank" rel="noreferrer">I Want to Scale</a>
+    </div>
+
+    <!-- MORE ON SCALE -->
+    <div class="more-scale">
+      <h2 class="more-scale-heading">More on SCALE</h2>
+      <div class="more-scale-images">
+        <img src="{{ get_asset_url('../images/scale_page1.jpg') }}" alt="Scale resource 1" class="reveal-scale">
+        <img src="{{ get_asset_url('../images/scale_page2.jpg') }}" alt="Scale resource 2" class="reveal-scale">
+      </div>
+      <div class="more-scale-text">
+        <p class="reveal">
+          Funding for this $25.3 million Program comes from the U.S. Treasury's
+          State Small Business Credit Initiative (SSBCI), which was created by the
+          U.S. Congress in 2010 and reauthorized through the American Rescue Plan
+          Act of 2021.
+        </p>
+        <p class="reveal">
+          This project is being supported, in whole or in part, by a subaward made
+          under federal award number SSBCI-21031-0018 awarded to the California
+          Office of the Small Business Advocate (CalOSBA) by the U.S. Department
+          of the Treasury.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{% include "./partials/footer.html" %}
+
+{{ standard_footer_includes }}
+<script src="{{ get_asset_url('../js/main.js') }}"></script>
+</body>
+</html>

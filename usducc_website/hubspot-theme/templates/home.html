@@ -1,0 +1,111 @@
+<!--
+  templateType: page
+  label: "Home"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ content.html_title }}</title>
+  {{ standard_header_includes }}
+  <link rel="stylesheet" href="{{ get_asset_url('../css/main.css') }}">
+</head>
+<body>
+
+{% include "./partials/header.html" %}
+
+<main>
+
+  <!-- HERO BANNER -->
+  <div class="home-banner">
+    <div class="banner-image">
+      <img src="{{ get_asset_url('../images/hero.jpg') }}" alt="USDUCC hero">
+    </div>
+    <div class="banner-text">
+      <h1 class="reveal-right">Changing small business with innovation and empowerment</h1>
+    </div>
+  </div>
+
+  <!-- PARTNERS -->
+  <div class="partners-section">
+    <div class="container">
+      <h2 class="reveal">Our Partners</h2>
+      <div class="partner-logos reveal-group">
+        <img src="{{ get_asset_url('../images/partners.png') }}" alt="Our partners">
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <div class="mission-section">
+    <div class="mission-text">
+      <h2 class="reveal-left">Our Mission</h2>
+      <p class="reveal-left">
+        By addressing documented gaps in support systems for Diaspora and
+        immigrant entrepreneurs, USDUCC develops, supports, and advocates for
+        entrepreneurial ventures so they can thrive and become generationally
+        sustaining, regardless of national origin, sex, religion, or age of
+        the owner.
+      </p>
+    </div>
+    <div class="mission-image">
+      <img class="reveal-scale" src="{{ get_asset_url('../images/our_mission.jpg') }}" alt="Our mission">
+    </div>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="events-section">
+    <div class="container">
+      <h2 class="reveal">Upcoming Events</h2>
+      <div class="events-grid reveal-group">
+        <div class="event-card reveal">
+          <div class="event-img-placeholder">img</div>
+          <div class="event-details">
+            <h3>Event Title</h3>
+            <p>Event description coming soon.</p>
+          </div>
+        </div>
+        <div class="event-card reveal">
+          <div class="event-img-placeholder">img</div>
+          <div class="event-details">
+            <h3>Event Title</h3>
+            <p>Event description coming soon.</p>
+          </div>
+        </div>
+        <div class="event-card reveal">
+          <div class="event-img-placeholder">img</div>
+          <div class="event-details">
+            <h3>Event Title</h3>
+            <p>Event description coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DONATIONS -->
+  <div class="donation-section">
+    <div class="donation-bg">
+      <img src="{{ get_asset_url('../images/donate.jpg') }}" aria-hidden="true" alt="">
+    </div>
+    <div class="donation-content">
+      <h2 class="reveal">Donate</h2>
+      <div class="donation-cta">
+        <p>Secure donations are processed via Stripe. Click below to choose your amount and complete your gift safely.</p>
+        <a href="https://donate.stripe.com/REPLACE_WITH_YOUR_LINK" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Donate Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include "./partials/footer.html" %}
+
+{{ standard_footer_includes }}
+<script src="{{ get_asset_url('../js/main.js') }}"></script>
+</body>
+</html>

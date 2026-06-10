@@ -1,0 +1,62 @@
+<!--
+  templateType: page
+  label: "Find Help"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ content.html_title }}</title>
+  {{ standard_header_includes }}
+  <link rel="stylesheet" href="{{ get_asset_url('../css/main.css') }}">
+</head>
+<body>
+
+{% include "./partials/header.html" %}
+
+<main>
+  <div class="findHelp-section">
+    <h1 class="reveal">Resources for Your Small Business</h1>
+
+    <!-- SCALE SECTION -->
+    <div class="california-section">
+      <img src="{{ get_asset_url('../images/scale-logo.png') }}" alt="SCALE logo">
+      <p class="reveal">
+        SCALE: Success, Capital Access and Leadership for Entrepreneurs was
+        created by the California Office of the Small Business Advocate (CalOSBA)
+        to help California's diverse small businesses across the state access more
+        resources to start up, grow, and create jobs.
+      </p>
+    </div>
+
+    <a href="/scale" class="find-help-link">Learn More</a>
+
+    <!-- NON-CALIFORNIA SECTION -->
+    <div class="non-california-section">
+      <h2 class="reveal">Find Support in Your Area</h2>
+      <div class="support-cards-grid">
+        <div class="support-card">
+          <h3>Legal Assistance</h3>
+          <p>Description coming soon.</p>
+        </div>
+        <div class="support-card">
+          <h3>Financial Management</h3>
+          <p>Description coming soon.</p>
+        </div>
+        <div class="support-card">
+          <h3>Funding</h3>
+          <p>Description coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "./partials/footer.html" %}
+
+{{ standard_footer_includes }}
+<script src="{{ get_asset_url('../js/main.js') }}"></script>
+</body>
+</html>

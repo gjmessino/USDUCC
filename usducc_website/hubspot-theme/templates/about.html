@@ -1,0 +1,94 @@
+<!--
+  templateType: page
+  label: "About"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ content.html_title }}</title>
+  {{ standard_header_includes }}
+  <link rel="stylesheet" href="{{ get_asset_url('../css/main.css') }}">
+</head>
+<body>
+
+{% include "./partials/header.html" %}
+
+<main>
+
+  <!-- ABOUT TOP -->
+  <div class="about-top">
+    <div class="container">
+      <div class="about-top-grid">
+        <div class="about-top-text">
+          <h1 class="reveal-left">About Us</h1>
+          <p class="reveal-left">
+            The United States Diaspora United Chamber of Commerce incubates
+            small businesses founded by members of the immigrant diaspora.
+            By addressing documented gaps in support systems for Diaspora
+            and immigrant entrepreneurs, USDUCC develops, supports, and
+            advocates for entrepreneurial ventures so they can thrive and
+            become generationally sustaining, regardless of national origin,
+            sex, religion, or age of the owner.
+          </p>
+          <p class="reveal-left">
+            We embody a strong mission to uplift and empower diaspora
+            business owners, fostering an inclusive economic environment.
+            By welcoming diverse small businesses, chambers of commerce,
+            and corporations that share a commitment to social
+            responsibility, we create a vibrant community that supports
+            economic growth and champions social equity.
+          </p>
+        </div>
+        <div class="about-top-image reveal-right">
+          <img src="{{ get_asset_url('../images/about_us.jpg') }}" alt="About USDUCC">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OUR APPROACH -->
+  <div class="approach-section">
+    <div class="container">
+      <h2 class="reveal">Our Approach</h2>
+      <div class="approach-layout">
+        <div class="approach-images reveal-left">
+          <img src="{{ get_asset_url('../images/our_approach1.jpg') }}" alt="Our approach">
+          <img src="{{ get_asset_url('../images/our_approach2.jpg') }}" alt="Our approach">
+        </div>
+        <div class="approach-cards reveal-group">
+          <div class="approach-card reveal">
+            <h3>Research and Analysis</h3>
+            <p>Collecting and analyzing data on the impact of diaspora and immigrant-owned businesses on local and national economies.</p>
+          </div>
+          <div class="approach-card reveal">
+            <h3>Policy and Advocacy</h3>
+            <p>Providing detailed policy analysis relevant to diaspora and immigrant business owners.</p>
+          </div>
+          <div class="approach-card reveal">
+            <h3>Business Support and Development</h3>
+            <p>Supporting business formation and legal structure navigation.</p>
+          </div>
+          <div class="approach-card reveal">
+            <h3>Network and Community Building</h3>
+            <p>Facilitating connections between diaspora and immigrant entrepreneurs and established business networks.</p>
+          </div>
+          <div class="approach-card reveal">
+            <h3>Global Engagement</h3>
+            <p>Building relationships with chambers of commerce and business organizations worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include "./partials/footer.html" %}
+
+{{ standard_footer_includes }}
+<script src="{{ get_asset_url('../js/main.js') }}"></script>
+</body>
+</html>

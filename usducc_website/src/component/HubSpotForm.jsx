@@ -22,6 +22,7 @@ function HubSpotForm({ formId, onReady }) {
         portalId: HUBSPOT_PORTAL_ID,
         formId,
         target: `#${targetId}`,
+        css: "",          // strip HubSpot's default styles; site CSS takes over
         onFormReady: onReady,
       });
     }

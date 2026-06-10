@@ -16,10 +16,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // ── Config ──────────────────────────────────────────────────────────────────
 const PORTAL_ID = "243871292";
-// Refresh this token if it has expired: run `hs auth` then copy the new
-// accessToken from hubspot.config.yml
-const ACCESS_TOKEN =
-  "CNnts_PqMxIgQlNQMl8kQEwrAhMACAkCFBwBAgEQAwoBAgMHGygCeAEYvNykdCCX36ROKO7pDDIUAEKVOffp6EyZ0i8ySF-Zd95Y2aI6S0JTUDJfJEBMKwMnAAKDAgTLAgYTGR-QAbsBjgKPApUClwKrAq8CxwLUAtUC2gLbAu0C9gL5AvoCqwOsA4MEmgSbBN0EsQeyB7DxBUIUvAeL9d3smk4Y-Zl---0Wa7tOH99KA25hMlIAWgBgAWiX36ROcAB4AA";
+
+// Use a Private App token with the `forms` scope.
+// Create one at: HubSpot Settings → Integrations → Private Apps
+// Then run: HUBSPOT_TOKEN="your-token" node scripts/setup-hubspot-forms.js
+const ACCESS_TOKEN = process.env.HUBSPOT_TOKEN;
+if (!ACCESS_TOKEN) {
+  console.error("❌  Missing token. Run:\n    HUBSPOT_TOKEN=\"your-private-app-token\" node scripts/setup-hubspot-forms.js");
+  process.exit(1);
+}
 
 // ── HubSpot Forms API helpers ────────────────────────────────────────────────
 function apiRequest(method, path, body) {
@@ -66,7 +71,7 @@ const FORMS = [
     fields: [
       field("firstname", "Name", "single_line_text", true),
       field("email", "Email", "single_line_text", true),
-      field("phone", "Phone Number", "phone_number", false),
+      field("phone", "Phone Number", "phone", false),
       field("message", "Message", "multi_line_text", true),
     ],
   },
@@ -76,7 +81,7 @@ const FORMS = [
     fields: [
       field("firstname", "Name", "single_line_text", true),
       field("email", "Email", "single_line_text", true),
-      field("phone", "Phone Number", "phone_number", false),
+      field("phone", "Phone Number", "phone", false),
       field("company", "Company", "single_line_text", false),
     ],
   },
@@ -93,27 +98,35 @@ const FORMS = [
     fields: [
       field("company", "Company Name", "single_line_text", true),
       field("email", "Email Address", "single_line_text", true),
-      field("phone", "Phone Number", "phone_number", false),
+      field("phone", "Phone Number", "phone", false),
       field("message", "Reason for Interest", "multi_line_text", true),
     ],
   },
 ];
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function chunk(arr, size) {
+  const out = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
 
 // ── Create a form via Marketing Forms API v3 ─────────────────────────────────
 async function createForm({ name, fields }) {
   const body = {
     name,
     formType: "hubspot",
-    fieldGroups: [
-      {
-        groupType: "default_group",
-        richTextType: "text",
-        fields,
-      },
-    ],
+    createdAt: new Date().toISOString(),
+    fieldGroups: chunk(fields, 3).map((groupFields) => ({
+      groupType: "default_group",
+      richTextType: "text",
+      fields: groupFields,
+    })),
     configuration: {
       language: "en",
-      cloneable: false,
+      cloneable: true,
+      editable: true,
+      archivable: true,
       postSubmitAction: { type: "thank_you", value: "Thanks for reaching out!" },
     },
   };

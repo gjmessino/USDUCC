@@ -968,12 +968,164 @@ ul { list-style: none; }
 }
 
 /* ==========================================================================
-   FORMS — shared
+   FORMS — shared (native React forms)
    ========================================================================== */
 form {
   display: flex;
   flex-direction: column;
   gap: 0;
+}
+
+/* ==========================================================================
+   HUBSPOT EMBEDDED FORMS
+   Target HubSpot's injected class names so they match the site's style.
+   The embed is told css:"" so HubSpot's default styles don't fight ours.
+   ========================================================================== */
+
+/* Outer form */
+.hs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+/* Each field wrapper — mirrors .form-group */
+.hs-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-sm);
+}
+
+/* Labels */
+.hs-form-field label,
+.hs-label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+/* Text inputs, textareas, selects */
+.hs-form .hs-input,
+.hs-form input[type="text"],
+.hs-form input[type="email"],
+.hs-form input[type="tel"],
+.hs-form input[type="number"],
+.hs-form textarea,
+.hs-form select {
+  width: 100%;
+  padding: 11px 14px;
+  background: var(--off-white);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.hs-form .hs-input:focus,
+.hs-form input:focus,
+.hs-form textarea:focus,
+.hs-form select:focus {
+  border-color: var(--green);
+}
+
+.hs-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* Submit button — mirrors .btn-primary */
+.hs-form .hs-button,
+.hs-form input[type="submit"] {
+  display: inline-block;
+  background: var(--green);
+  color: var(--off-white);
+  padding: 11px 28px;
+  border: none;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.2s ease, transform 0.15s ease;
+  margin-top: var(--space-xs);
+}
+
+.hs-form .hs-button:hover,
+.hs-form input[type="submit"]:hover {
+  background: var(--green-hover);
+  transform: translateY(-2px);
+}
+
+/* Submit row */
+.hs-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Validation errors */
+.hs-error-msgs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hs-error-msg,
+.hs-error-msgs label {
+  font-size: 0.8rem;
+  color: #e05a5a;
+  font-weight: 400;
+}
+
+/* HubSpot sometimes adds a required asterisk span — keep it subtle */
+.hs-form .hs-form-required {
+  color: var(--green);
+  margin-left: 2px;
+}
+
+/* Remove HubSpot's default fieldset border/padding */
+.hs-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100% !important;
+}
+
+/* Newsletter subscribe form in footer — single-line inline layout */
+.footer-newsletter .hs-form {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-newsletter .hs-form-field {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.footer-newsletter .hs-form .hs-input,
+.footer-newsletter .hs-form input[type="email"] {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+
+.footer-newsletter .hs-submit {
+  margin-top: 0;
+}
+
+/* On dark backgrounds (contact, membership, partnership) labels are white —
+   already set above. On light backgrounds override to dark. */
+.membership-form-panel .hs-label,
+.contact-form-panel    .hs-label,
+.partnership-content   .hs-label {
+  color: var(--white);
 }
 .form-group {
   display: flex;
